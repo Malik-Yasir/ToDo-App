@@ -1,0 +1,116 @@
+/* Responsiv coding for different devices */
+@media (max-width: 600px) {
+  .input-wrapper {
+    flex-direction: column;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  li div {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .manage-btns {
+    justify-content: center;
+    margin: 10px 0;
+  }
+}
+/* for body style */
+body{
+font-family: arial, sans-serif;
+display: grid;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+background-image: url(.\image.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+  background-position: center;
+  padding: 10px; /* Add some padding for small screens */
+  box-sizing: border-box;
+  overflow: hidden
+}
+
+/* for removing scrollbar from body  */
+body::-webkit-scrollbar{
+  display: none;
+}
+.app{
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: rgba(255, 255, 255, 0.18);
+  max-height: 23rem;
+  overflow-y: auto;
+}
+h1{
+  margin: 15px 0px;
+  color: white;
+  text-align: center;
+}
+.input-wrapper{
+display: flex;
+gap: 10px;
+margin-bottom: 20px;
+
+}
+.input-box{
+  padding-left: 8px;
+}
+button{
+  padding: 10px;
+  border: 0px;
+  background-color: rgb(19, 185, 19);
+  cursor: pointer;
+  color: white;
+  border-radius: 5px;
+}
+button:hover{
+  background-color: #198a48;
+}
+ul{
+  list-style-type: none;
+  padding: 0%;
+}
+li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center ;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+li div button{
+background-color: #dc3545;
+}
+li div button:hover{
+background-color: #c82333;
+}
+li div button:first-child{
+background-color: #ffc110;
+margin-right: 10px;
+}
+li div button:first-child:hover{
+background-color: #e0a800;
+}
+.manage-btns{
+  margin-left: 20px;
+  margin-right: 5px;
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+}
